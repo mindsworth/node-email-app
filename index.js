@@ -7,7 +7,7 @@ require('./services/passport');
 require('./models/user');
 
 mongoose
-  .connect(keys.mongoURL)
+  .connect(keys.mongoURI)
   .then(() => {
     console.log('Database Conneccted!');
   })
